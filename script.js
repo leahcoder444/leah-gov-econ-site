@@ -25,16 +25,8 @@ function renderVoteChart(){
     },
     options: {
       responsive: true,
-      scales: {
-        y: {
-          beginAtZero: true,
-          ticks: { precision: 0 }
-        }
-      },
-      plugins: {
-        legend: { display: false },
-        tooltip: { enabled: true }
-      }
+      scales: { y: { beginAtZero: true, ticks: { precision: 0 } } },
+      plugins: { legend: { display: false } }
     }
   });
 }

@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Final Vote Results</title>
   <link rel="stylesheet" href="style.css" />
-  
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-
 </head>
 <body>
 
@@ -29,16 +27,15 @@
 <main>
   <section class="hero">
     <h2>Final Vote Results</h2>
-    <p>The final passage vote totals, visualized in a chart, plus a prompt for party division analysis if required.</p>
+    <p>The final passage vote totals, visualized in a chart.</p>
   </section>
-  
-<div class="grid">
+  <div class="grid">
   <section class="card half">
     <span class="badge">Results</span>
     <h3>Final vote for LB574</h3>
     <p>
       LB574 passed on Final Reading with an Emergency Clause on May 19, 2023.
-      The recorded vote totals show <strong>33 Yes</strong>, <strong>15 No</strong>, and <strong>1 Excused/Not voting</strong>.
+      Vote totals: <strong>33 Yes</strong>, <strong>15 No</strong>, <strong>1 Excused/Not voting</strong>.
     </p>
     <hr />
     <table aria-label="Vote totals table">
@@ -53,8 +50,8 @@
     </table>
 
     <p class="small" style="margin-top:10px;">
-      Note on parties: Nebraska's Legislature is officially nonpartisan. For a party breakdown, you can discuss reported party affiliations,
-      but this site shows the official vote totals.
+      Note on parties: Nebraska's Legislature is officially nonpartisan. If your teacher requires party analysis,
+      cite a source that explicitly describes party alignment.
     </p>
   </section>
 
@@ -66,28 +63,14 @@
       <canvas id="voteChart" data-yes="33" data-no="15" data-excused="1" height="140"></canvas>
     </div>
     <p class="small" style="margin-top:10px;">
-      Source: Nebraska Legislature "Recorded Votes" page for LB574.
-    </p>
-  </section>
-
-  <section class="card">
-    <span class="badge">Discussion prompt</span>
-    <h3>Did the vote divide by political party?</h3>
-    <p>
-      Add a short paragraph here using your sources. Since the Unicameral is officially nonpartisan, party splits are usually discussed by journalists
-      based on party registration or public affiliation. If your teacher requires party analysis, cite a news source that explicitly describes it.
+      Source: Nebraska Legislature recorded votes for LB574.
     </p>
   </section>
 </div>
-
-<!-- Chart.js from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-
 </main>
 
     <div class="footer">
       <div>Made by Leah. Class: US Government and Economics.</div>
-      <div class="small">Tip: replace bracketed placeholders with Leah's own words and any teacher required details.</div>
     </div>
     
 <script src="script.js"></script>
