@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Final Vote Results</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+</head>
+<body>
+
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <h1>Leah's US Government and Economics Project</h1>
+          <span>Roe v. Wade, Nebraska Legislature</span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html" class="">Title</a>
+          <a href="process.html" class="">Discussion and Timeline</a>
+          <a href="vote.html" class="active">Final Vote</a>
+          <a href="opinion-sources.html" class="">Opinion and Sources</a>
+        </nav>
+      </div>
+    </header>
+    
+<main>
+  <section class="hero">
+    <h2>Final Vote Results</h2>
+    <p>The final passage vote totals, visualized in a chart, plus a prompt for party division analysis if required.</p>
+  </section>
+  
+<div class="grid">
+  <section class="card half">
+    <span class="badge">Results</span>
+    <h3>Final vote for LB574</h3>
+    <p>
+      LB574 passed on Final Reading with an Emergency Clause on May 19, 2023.
+      The recorded vote totals show <strong>33 Yes</strong>, <strong>15 No</strong>, and <strong>1 Excused/Not voting</strong>.
+    </p>
+    <hr />
+    <table aria-label="Vote totals table">
+      <thead>
+        <tr><th>Vote</th><th>Count</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Yes</td><td>33</td></tr>
+        <tr><td>No</td><td>15</td></tr>
+        <tr><td>Excused / Not voting</td><td>1</td></tr>
+      </tbody>
+    </table>
+
+    <p class="small" style="margin-top:10px;">
+      Note on parties: Nebraska's Legislature is officially nonpartisan. For a party breakdown, you can discuss reported party affiliations,
+      but this site shows the official vote totals.
+    </p>
+  </section>
+
+  <section class="card half">
+    <span class="badge">Chart</span>
+    <h3>Vote chart</h3>
+    <p>The chart below visualizes the final vote totals.</p>
+    <div style="margin-top:12px;">
+      <canvas id="voteChart" data-yes="33" data-no="15" data-excused="1" height="140"></canvas>
+    </div>
+    <p class="small" style="margin-top:10px;">
+      Source: Nebraska Legislature "Recorded Votes" page for LB574.
+    </p>
+  </section>
+
+  <section class="card">
+    <span class="badge">Discussion prompt</span>
+    <h3>Did the vote divide by political party?</h3>
+    <p>
+      Add a short paragraph here using your sources. Since the Unicameral is officially nonpartisan, party splits are usually discussed by journalists
+      based on party registration or public affiliation. If your teacher requires party analysis, cite a news source that explicitly describes it.
+    </p>
+  </section>
+</div>
+
+<!-- Chart.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+</main>
+
+    <div class="footer">
+      <div>Made by Leah. Class: US Government and Economics.</div>
+      <div class="small">Tip: replace bracketed placeholders with Leah's own words and any teacher required details.</div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
